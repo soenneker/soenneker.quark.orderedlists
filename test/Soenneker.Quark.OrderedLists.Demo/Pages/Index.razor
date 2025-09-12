@@ -1,0 +1,322 @@
+﻿@page "/"
+@using Microsoft.Extensions.Logging
+
+@inject ILogger<Index> Logger
+
+<div class="container">
+    <img src="https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png" />
+    <h1>Soenneker.Quark.OrderedLists Demo</h1>
+    <p>This page demonstrates the HTML Ordered List component from Quark.OrderedLists.</p>
+    <br />
+
+    <hr />
+
+    <h2>Basic Ordered List Usage</h2>
+    <p>The OrderedList component provides semantic HTML ordered list elements for numbered content display.</p>
+    
+    <div class="mb-3">
+        <OrderedList>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Bootstrap Typography Classes</h2>
+    <div class="mb-3">
+        <OrderedList Class="h1">
+            <li>Heading 1 Style List</li>
+            <li>Another item</li>
+        </OrderedList>
+        <OrderedList Class="h2">
+            <li>Heading 2 Style List</li>
+            <li>Another item</li>
+        </OrderedList>
+        <OrderedList Class="h3">
+            <li>Heading 3 Style List</li>
+            <li>Another item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Color Classes</h2>
+    <div class="mb-3">
+        <OrderedList Class="text-primary">
+            <li>Primary colored list item</li>
+            <li>Another primary item</li>
+        </OrderedList>
+        <OrderedList Class="text-secondary">
+            <li>Secondary colored list item</li>
+            <li>Another secondary item</li>
+        </OrderedList>
+        <OrderedList Class="text-success">
+            <li>Success colored list item</li>
+            <li>Another success item</li>
+        </OrderedList>
+        <OrderedList Class="text-danger">
+            <li>Danger colored list item</li>
+            <li>Another danger item</li>
+        </OrderedList>
+        <OrderedList Class="text-warning">
+            <li>Warning colored list item</li>
+            <li>Another warning item</li>
+        </OrderedList>
+        <OrderedList Class="text-info">
+            <li>Info colored list item</li>
+            <li>Another info item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Font Weight Classes</h2>
+    <div class="mb-3">
+        <OrderedList Class="fw-light">
+            <li>Light font weight list item</li>
+            <li>Another light item</li>
+        </OrderedList>
+        <OrderedList Class="fw-normal">
+            <li>Normal font weight list item</li>
+            <li>Another normal item</li>
+        </OrderedList>
+        <OrderedList Class="fw-bold">
+            <li>Bold font weight list item</li>
+            <li>Another bold item</li>
+        </OrderedList>
+        <OrderedList Class="fw-bolder">
+            <li>Bolder font weight list item</li>
+            <li>Another bolder item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Font Style Classes</h2>
+    <div class="mb-3">
+        <OrderedList Class="fst-normal">
+            <li>Normal font style list item</li>
+            <li>Another normal item</li>
+        </OrderedList>
+        <OrderedList Class="fst-italic">
+            <li>Italic font style list item</li>
+            <li>Another italic item</li>
+        </OrderedList>
+        <OrderedList Class="fst-oblique">
+            <li>Oblique font style list item</li>
+            <li>Another oblique item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Text Decoration</h2>
+    <div class="mb-3">
+        <OrderedList Class="text-decoration-none">
+            <li>No text decoration list item</li>
+            <li>Another item</li>
+        </OrderedList>
+        <OrderedList Class="text-decoration-underline">
+            <li>Underlined list item</li>
+            <li>Another underlined item</li>
+        </OrderedList>
+        <OrderedList Class="text-decoration-line-through">
+            <li>Strikethrough list item</li>
+            <li>Another strikethrough item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Text Alignment</h2>
+    <div class="mb-3">
+        <OrderedList Class="text-start">
+            <li>Left aligned list item</li>
+            <li>Another left aligned item</li>
+        </OrderedList>
+        <OrderedList Class="text-center">
+            <li>Center aligned list item</li>
+            <li>Another center aligned item</li>
+        </OrderedList>
+        <OrderedList Class="text-end">
+            <li>Right aligned list item</li>
+            <li>Another right aligned item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Background Colors</h2>
+    <div class="mb-3">
+        <OrderedList Class="bg-primary text-white p-3">
+            <li>Primary background list item</li>
+            <li>Another primary item</li>
+        </OrderedList>
+        <OrderedList Class="bg-secondary text-white p-3">
+            <li>Secondary background list item</li>
+            <li>Another secondary item</li>
+        </OrderedList>
+        <OrderedList Class="bg-success text-white p-3">
+            <li>Success background list item</li>
+            <li>Another success item</li>
+        </OrderedList>
+        <OrderedList Class="bg-danger text-white p-3">
+            <li>Danger background list item</li>
+            <li>Another danger item</li>
+        </OrderedList>
+        <OrderedList Class="bg-warning text-dark p-3">
+            <li>Warning background list item</li>
+            <li>Another warning item</li>
+        </OrderedList>
+        <OrderedList Class="bg-info text-white p-3">
+            <li>Info background list item</li>
+            <li>Another info item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Spacing</h2>
+    <div class="mb-3">
+        <OrderedList Class="m-1 p-1 bg-light">
+            <li>Margin and padding 1 list item</li>
+            <li>Another item</li>
+        </OrderedList>
+        <OrderedList Class="m-2 p-2 bg-light">
+            <li>Margin and padding 2 list item</li>
+            <li>Another item</li>
+        </OrderedList>
+        <OrderedList Class="m-3 p-3 bg-light">
+            <li>Margin and padding 3 list item</li>
+            <li>Another item</li>
+        </OrderedList>
+        <OrderedList Class="m-4 p-4 bg-light">
+            <li>Margin and padding 4 list item</li>
+            <li>Another item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Bootstrap Display Classes</h2>
+    <div class="mb-3">
+        <OrderedList Class="d-inline bg-primary text-white p-2">
+            <li>Inline list item</li>
+        </OrderedList>
+        <OrderedList Class="d-inline bg-secondary text-white p-2">
+            <li>Another inline list item</li>
+        </OrderedList>
+        <OrderedList Class="d-block bg-success text-white p-2">
+            <li>Block list item</li>
+            <li>Another block item</li>
+        </OrderedList>
+        <OrderedList Class="d-inline-block bg-warning text-dark p-2">
+            <li>Inline-block list item</li>
+            <li>Another inline-block item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Responsive Classes</h2>
+    <div class="mb-3">
+        <OrderedList Class="text-sm-start text-md-center text-lg-end">
+            <li>Responsive text alignment list item</li>
+            <li>Changes based on screen size</li>
+        </OrderedList>
+        <OrderedList Class="d-none d-md-block">
+            <li>This list is hidden on small screens</li>
+            <li>Visible on medium+ screens</li>
+        </OrderedList>
+        <OrderedList Class="d-block d-md-none">
+            <li>This list is visible on small screens</li>
+            <li>Hidden on medium+ screens</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Custom Numbering</h2>
+    <div class="mb-3">
+        <OrderedList Class="list-group list-group-numbered">
+            <li class="list-group-item">Numbered list group item</li>
+            <li class="list-group-item">Another numbered item</li>
+            <li class="list-group-item">Third numbered item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List Properties</h2>
+    <div class="bg-light p-3 mb-3">
+        <h3>OrderedList Features</h3>
+        <p>The OrderedList component inherits all properties from the Element base class:</p>
+        <ul>
+            <li><strong>Id:</strong> HTML id attribute</li>
+            <li><strong>Class:</strong> CSS classes (Bootstrap utility classes supported)</li>
+            <li><strong>Style:</strong> Inline CSS styles</li>
+            <li><strong>Title:</strong> Tooltip text</li>
+            <li><strong>Hidden:</strong> Visibility control</li>
+            <li><strong>Display:</strong> CSS display property</li>
+            <li><strong>Margin/Padding:</strong> Spacing utilities</li>
+            <li><strong>Event Handlers:</strong> Click, focus, keyboard events</li>
+        </ul>
+    </div>
+
+    <h2>Interactive Ordered List Example</h2>
+    <div class="mb-3">
+        <OrderedList Class="text-primary" style="cursor: pointer;" title="Clickable list">
+            <li>This list has a pointer cursor and tooltip</li>
+            <li>Another interactive item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Custom Styling</h2>
+    <div class="mb-3">
+        <OrderedList Class="custom-list" style="font-family: 'Courier New', monospace; font-size: 1.1em; color: #6f42c1; line-height: 1.6;">
+            <li>Custom styled list item with inline styles</li>
+            <li>Another custom styled item</li>
+            <li>Third custom styled item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Nested Ordered Lists</h2>
+    <div class="mb-3">
+        <OrderedList>
+            <li>First level item</li>
+            <li>Second level item
+                <OrderedList>
+                    <li>Nested item 1</li>
+                    <li>Nested item 2</li>
+                    <li>Nested item 3</li>
+                </OrderedList>
+            </li>
+            <li>Third level item</li>
+        </OrderedList>
+    </div>
+
+    <h2>Ordered List with Different List Styles</h2>
+    <div class="mb-3">
+        <OrderedList Class="list-unstyled">
+            <li>Unstyled list item</li>
+            <li>Another unstyled item</li>
+        </OrderedList>
+        <OrderedList Class="list-inline">
+            <li class="list-inline-item">Inline list item 1</li>
+            <li class="list-inline-item">Inline list item 2</li>
+            <li class="list-inline-item">Inline list item 3</li>
+        </OrderedList>
+    </div>
+
+    <h2>Complex Ordered List Example</h2>
+    <div class="mb-3">
+        <OrderedList Class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">First item with subheading</div>
+                    Content for the first item goes here.
+                </div>
+                <span class="badge bg-primary rounded-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Second item with subheading</div>
+                    Content for the second item goes here.
+                </div>
+                <span class="badge bg-primary rounded-pill">2</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Third item with subheading</div>
+                    Content for the third item goes here.
+                </div>
+                <span class="badge bg-primary rounded-pill">3</span>
+            </li>
+        </OrderedList>
+    </div>
+</div>
+
+@code{
+    protected override void OnInitialized()
+    {
+        Logger.LogInformation("OrderedList demo page initialized");
+    }
+}
